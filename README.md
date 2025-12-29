@@ -1,20 +1,40 @@
+<div align="center"> <h1>Mihir Mulchandani</h1> </div>
+<img width="1919" height="960" alt="Screenshot from 2025-12-29 10-14-32" src="https://github.com/user-attachments/assets/28c2f6ec-2d53-4299-a75a-558c6ca27b90" />
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+   
 </div>
 
-# Run and deploy your AI Studio app
+<div>
+Security-first systems.  
+Deterministic behavior over convenience.
 
-This contains everything you need to run your app locally.
+This repository contains my personal portfolio.
+It reflects how I design and reason about systems, not how I present them.
+</div><div>
+## Focus
+- Trust boundaries as first-class constraints
+- Client-side cryptography with zero recovery paths
+- Irreversible states by design
+- Absence of data as a valid outcome
+</div><div>
+## Work
+- **KeyOne** — one-time message delivery, untrusted server model  
+- **MsgOne** — ephemeral encrypted messaging with destructive reads  
+- **Secure Pass Check** — fully client-side password evaluation  
+</div><div>
+## Properties
+- No analytics
+- No tracking
+- No silent state
+- Failure modes are explicit
+</div><div>
+Click the image below to view the website 
 
-View your app in AI Studio: https://ai.studio/apps/drive/1BJsRcTtW-Tgq7IEZ8xz_ueCvN_NkhkB6
-
-## Run Locally
-
-**Prerequisites:**  Node.js
+<p align="center">
+  <a href="https://mihirportfolio-iota.vercel.app/">
+<img width="1919" height="960" alt="Screenshot from 2025-12-29 10-14-32" src="https://github.com/user-attachments/assets/216a9366-c61e-4696-a5c2-ac48a34ed58a" />
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+  </a>
+</p>
+</div>

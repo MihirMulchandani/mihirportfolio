@@ -32,7 +32,8 @@ Click the image below to view the website
 
 <p align="center">
   <a href="https://mihirportfolio-iota.vercel.app/">
-<img width="1919" height="960" alt="Screenshot from 2025-12-29 10-14-32" src="https://github.com/user-attachments/assets/216a9366-c61e-4696-a5c2-ac48a34ed58a" />
+
+<img width="218" height="52" alt="Screenshot from 2025-12-29 10-14-58" src="https://github.com/user-attachments/assets/92ed995d-59ab-4cd1-99ea-db1f4d0f6633" />
 
 
   </a>

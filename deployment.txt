@@ -1,0 +1,53 @@
+Mihir Mulchandani Portfolio - Deployment Instructions
+
+1. PREREQUISITES
+   - Node.js v18.x or higher
+   - npm or yarn
+
+2. INSTALLATION
+   Run the following command in the project root:
+   npm install
+
+   Note: This project uses React + Vite (or Create React App) structure. 
+   Ensure you have `react`, `react-dom`, `react-router-dom` and `typescript` installed.
+   Dev dependencies should include `tailwindcss`, `postcss`, `autoprefixer`.
+
+3. LOCAL DEVELOPMENT
+   To start the development server:
+   npm start
+   (or `npm run dev` depending on your scripts setup)
+
+4. RESUME CONFIGURATION (IMPORTANT)
+   The website links to a resume file, but the file itself and the folder to hold it are not generated automatically. You must add them manually.
+   
+   Steps:
+   a. Create a new folder named `public` in the project root directory (at the same level as `index.html`).
+   b. Rename your PDF resume file to: Mihir_Mulchandani_Resume.pdf
+   c. Place the PDF file inside the newly created `public/` folder.
+   
+   Why?
+   Build tools like Vite or Webpack serve static assets from the `public` directory. When the app is built, files in `public` are copied to the root of the output. 
+   The code references `/${PERSONAL_INFO.resumeFileName}`, which resolves to the root URL (e.g., domain.com/Mihir_Mulchandani_Resume.pdf).
+
+5. DEPLOYMENT TO VERCEL
+   a. Push this code to a public GitHub repository.
+   b. Log in to Vercel (https://vercel.com).
+   c. "Add New..." -> "Project".
+   d. Import your GitHub repository.
+   e. Framework Preset: 
+      - If using Vite: Select "Vite".
+      - If using Create React App: Select "Create React App".
+      - If generic: Ensure Build Command is `npm run build` and Output Directory is `dist` or `build`.
+   f. Click "Deploy".
+
+6. ENVIRONMENT VARIABLES
+   This project is a static client-side application and does not currently require server-side environment variables.
+   All configuration is contained within `constants.ts`.
+
+7. NEXT.JS NOTE
+   While the initial prompt requested Next.js, this codebase is structured as a standard React SPA (Single Page Application) using `react-router-dom` (HashRouter).
+   This ensures compatibility with static file hosting environments and strictly client-side navigation without server-side routing complexity.
+   To migrate to Next.js in the future:
+   - Move `pages/` components to `app/` directory.
+   - Replace `react-router-dom` Link/NavLink with `next/link`.
+   - Remove `HashRouter` and `index.html`.
